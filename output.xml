@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.2 on win32)" generated="20190717 22:18:35.405" rpa="false">
+<suite id="s1" name="Key Word" source="C:\Users\DELL\PycharmProjects\robot_framework\key_word.robot">
+<test id="s1-t1" name="open test login">
+<kw name="login page" library="resources">
+<doc>THIS IS LOGIN</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20190717 22:18:35.925" level="INFO">Opening browser 'Chrome' to base url 'http://onlineshope.pythonanywhere.com/login/'.</msg>
+<status status="PASS" starttime="20190717 22:18:35.921" endtime="20190717 22:18:42.126"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${Title}</var>
+</assign>
+<msg timestamp="20190717 22:18:42.145" level="INFO">${Title} = </msg>
+<status status="PASS" starttime="20190717 22:18:42.126" endtime="20190717 22:18:42.145"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Title}</arg>
+</arguments>
+<msg timestamp="20190717 22:18:42.146" level="INFO"></msg>
+<status status="PASS" starttime="20190717 22:18:42.145" endtime="20190717 22:18:42.146"></status>
+</kw>
+<timeout value="50 seconds"></timeout>
+<status status="PASS" starttime="20190717 22:18:35.920" endtime="20190717 22:18:42.147"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:password</arg>
+<arg>pavan</arg>
+</arguments>
+<msg timestamp="20190717 22:18:42.147" level="INFO">Typing text 'pavan' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20190717 22:18:42.147" endtime="20190717 22:18:42.276"></status>
+</kw>
+<status status="PASS" starttime="20190717 22:18:35.919" endtime="20190717 22:18:42.277" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190717 22:18:35.408" endtime="20190717 22:18:42.279"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Key Word">Key Word</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
